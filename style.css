@@ -1,0 +1,264 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.cover {
+
+  display: flex;
+
+  flex-flow: row wrap;
+
+
+  font-weight: bold;
+  text-align: center;
+
+  background-image: url(images/brian.jpg);
+  background-size: cover;
+}
+
+
+.cover > * {
+  /*padding: 10px; */
+  /*flex: 1 100%;*/
+}
+
+.header {
+  flex: 1 100%;
+  color: white;
+  margin: 0;
+  padding-top: 150px;
+  height: 100px;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.text {
+  flex: 1 100%;
+  color: white;
+  margin: 0;
+  padding: 0;
+  height: 30px;
+}
+
+.contain {
+  display: flex;
+  flex: 1 100%;
+  margin: 0;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  flex-basis: auto;
+  margin: 0;
+  padding: 15px;
+  height: auto;
+  width:30%;
+  border-radius: 25px;
+  background: rgba(0,0,0,.5);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.address{
+  width: 65%;
+  padding: 5px 10px;
+}
+
+.button {
+  background-color: green;
+  border-radius: 7px;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+
+}
+@media all and (min-width: 640px){
+  .mobilelinks {
+    display: none;
+  }
+}
+/* All Navigation from flex tutorial with changes by me */
+
+#site {
+  position: absolute;
+  left: 5px;
+}
+
+#signin {
+  background-color: rgba(0,0,0,.4);
+}
+
+.navigation {
+  flex: 1 100%;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+.navigation a:hover{
+  background-color: black;
+  border-radius: 4px;
+  border-color: black;
+}
+
+
+.footer {
+  list-style: none;
+  margin: 0;
+  background: blue;
+
+
+  display: flex;
+
+  justify-content: flex-end;
+}
+
+
+.footer a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+.footer a:hover{
+  background-color: black;
+  border-radius: 4px;
+  border-color: black;
+}
+
+
+.links {
+
+  display: flex;
+  flex: 1 100%;
+  padding-top: 100px;
+  margin: 0;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+
+
+}
+
+.item {
+
+list-style: none;
+text-align: left;
+padding: 10px;
+color: white;
+
+}
+
+
+
+@media all and (max-width: 640px) {
+  .cover {
+    flex-direction: column;
+  }
+
+  .header {
+    flex: 1 100%;
+    color: white;
+    margin: 0;
+    padding-top: 40px;
+    height: 100px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .text {
+    flex: 1 100%;
+    color: white;
+    margin: 0;
+    padding-top: 10px;
+    height: 30px;
+    justify-content: center;
+  }
+
+  .contain {
+    display: flex;
+    flex: 1 100%;
+    margin: 0;
+    height: auto;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .input {
+    flex-basis: auto;
+    margin: 0;
+    padding: 15px;
+    height: auto;
+    width:100%;
+    border-radius: 25px;
+    background: rgba(0,0,0,.5);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+
+  .address{
+    width: 94%;
+    padding: 5px 10px;
+  }
+
+  .button {
+    background-color: green;
+    border-radius: 7px;
+    text-align: center;
+    width: 98%;
+    color: white;
+    font-size: 16px;
+  }
+
+  #other {
+    display: none;
+  }
+
+  #signin {
+    position: absolute;
+    right: 5px;
+  }
+
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding-bottom: 40px;
+  }
+
+  .footer {
+    justify-content: space-around;
+  }
+
+  .item {
+   display: none;
+  }
+
+  .mobilelinks {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    text-align: left;
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    color: white;
+  }
+}
