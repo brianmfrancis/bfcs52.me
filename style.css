@@ -4,23 +4,12 @@ body {
 }
 
 .cover {
-
   display: flex;
-
   flex-flow: row wrap;
-
-
   font-weight: bold;
   text-align: center;
-
   background-image: url(images/brian.jpg);
   background-size: cover;
-}
-
-
-.cover > * {
-  /*padding: 10px; */
-  /*flex: 1 100%;*/
 }
 
 .header {
@@ -32,7 +21,6 @@ body {
   justify-content: center;
   text-align: center;
 }
-
 
 .text {
   flex: 1 100%;
@@ -83,7 +71,7 @@ body {
     display: none;
   }
 }
-/* All Navigation from flex tutorial with changes by me */
+/* Navigation and footer started from flex tutorial with changes by me */
 
 #site {
   position: absolute;
@@ -102,9 +90,6 @@ body {
   justify-content: flex-end;
 }
 
-
-
-
 .navigation a {
   text-decoration: none;
   display: block;
@@ -117,18 +102,13 @@ body {
   border-color: black;
 }
 
-
 .footer {
   list-style: none;
   margin: 0;
   background: blue;
-
-
   display: flex;
-
   justify-content: flex-end;
 }
-
 
 .footer a {
   text-decoration: none;
@@ -143,9 +123,7 @@ body {
   border-color: black;
 }
 
-
 .links {
-
   display: flex;
   flex: 1 100%;
   padding-top: 100px;
@@ -153,20 +131,14 @@ body {
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
-
-
 }
 
 .item {
-
-list-style: none;
-text-align: left;
-padding: 10px;
-color: white;
-
+  list-style: none;
+  text-align: left;
+  padding: 10px;
+  color: white;
 }
-
-
 
 @media all and (max-width: 640px) {
   .cover {
